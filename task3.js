@@ -30,6 +30,7 @@ function main(a){
     points = points.filter(function(value){
         return JSON.stringify(value)!=JSON.stringify(_nextPoint);
     });
+    console.log(_nextPoint)
     borderPoints.push(_nextPoint);
     if(_nextPoint==leftestPoint){
         console.log("end")
@@ -50,7 +51,7 @@ function getDrictionPosition(a){
     return res;
 }
 function getArea(){
-    console.log(borderPoints)
+    //console.log(borderPoints)
     borderPoints[0];
     var area=0;
     for(var i=2;i<borderPoints.length;i++){
